@@ -1,0 +1,271 @@
+
+body
+{
+    margin: 20px;
+}
+body, div, form, input, select, p   
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+.info
+{
+    font-size: 20px;
+}
+.heading
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom:20px;
+    margin-left: 220px;
+    text-decoration: underline;
+    text-underline-offset: 4.5px;
+    color: #095484;
+}
+form 
+{
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px 40px #095484; 
+    width: 95%;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+input
+{
+    height: 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color:white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border:1px solid #ccc;
+}
+.question-answer{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.img 
+{
+    margin-top: 5px;
+    border-radius:20px;
+    position: relative;
+    background-image:url("https://images-prod.healthline.com/hlcmsresource/images/topic_centers/man-deadlift-1296x728-header.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(250, 250, 250);
+}
+h1
+{
+    font-size: 50px;
+}
+
+span.required
+{
+        color: red
+}
+.txtbox
+{
+    width:300px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 20px; 
+    border-radius: 6px;
+}
+.txtbox1
+{
+    width: 630px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 6px;
+}   
+.password p{
+    margin: 1px;
+}
+input:hover
+{
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px 0 #095484;
+    color: #095484;
+} 
+
+.item:hover,input:hover::placeholder,.question:hover p, .question label:hover
+{
+    color: #095484;
+}
+
+.question p
+{
+    margin:0% ;
+}
+.question span{
+    margin-left: 5px;
+}
+
+.abc
+{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+@media (min-width: 568px) 
+{   .name-item, .city-item 
+    {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+.question input 
+{
+    width: auto;
+    margin:0;
+    border-radius: 50%;
+}
+.question input, .question span, .item input, .item span
+{
+    vertical-align: middle;
+}
+.item label
+{
+    /* display: inline-block; */
+    margin: 5px 20px 0px 0px;
+    font-size: 18px;
+    text-align: left;
+}
+.circle{
+    margin-left: 0px;
+}
+#show1, #show2
+{
+    margin-bottom: 0px;
+}
+.question label
+{
+    display: inline-block;
+    margin: 5px 20px 10px 0px;
+    font-size: 18px;
+}
+button 
+{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #095484;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: 110px;
+}
+button:hover 
+{
+    background: #0666a3;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+}
+button[type="reset"]:hover{
+    background-color: red;
+}
+input[type='radio']:before 
+{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;    
+}
+input[type='radio'] 
+{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 2px 0px #afc5d3 inset;
+}
+input[type='radio']:hover 
+{
+    box-shadow:0 0 2px 5px #afc5d3 inset;
+}
+input[type='radio']:before 
+{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;    
+}
+input[type='radio']:checked:before 
+{
+    background:#095484;
+}
+
+input[type='checkbox'] 
+{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 2px 0px #afc5d3 inset;
+}
+input[type='checkbox']:hover 
+{
+    box-shadow:0 0 2px 5px #afc5d3 inset;
+}
+input[type='checkbox']:before 
+{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;    
+}
+input[type='checkbox']:checked:before 
+{
+    background:#095484;
+}
+
+.signup
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom:20px;
+    margin-left: 250px;
+    text-decoration: underline;
+    text-underline-offset: 4.5px;
+    color: #095484;
+}
+.link span
+{
+    font-size: 20px;
+}
+.link ul
+{
+    line-height: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+} 
+.bold
+{
+    font-weight:bolder;
+}
+.imp
+{
+    font-weight:bolder;
+}
+

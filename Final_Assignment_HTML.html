@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gym Membership Form </title>
+
+    <link rel = "stylesheet" href = "Final_Assignment_CSS.css">
+    
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<body>
+    <form action ="" name = "myForm" onsubmit="return validateForm()" method = "POST" autocomplete="on">
+        <h1 class = "img"> Gym Membership Form </h1>
+        <p class="info">Want to become a member of our Gym? Then start by filling our form to complete registration. We will contact you shortly to inform you about your membership card.</p>
+        <p class="heading"> Personal Details </p>
+        <div class="css">
+                <!-- Enter your Name -->
+                <div class="item" id="name">
+                    <span class="abc">Name<span class="required">*</span></span><br>
+                    <div class="name-item">
+                        <input type="text" class="txtbox" name="fname" placeholder="First " required/><span class = "error_form"></span>
+                        <input type="text" class="txtbox" name="lname" placeholder="Last" required/> <span class= "error_form"> </span>
+                    </div>    
+                </div>
+                <!-- Enter your Date Of Birth -->
+                <div class="item" id="dob">
+                    <span class="abc"> DOB<span class="required">*</span></span><br>
+                        <input type="date" class="txtbox1" name="number" required/> <span class="error_form"></span>
+                </div>
+                <!-- Enter your Phoneno. -->
+                <div class="item" id="phone">
+                    <span class="abc"> Phone<span class="required">*</span></span><br>
+                        <input type="tel" class="txtbox1" name="number" placeholder = "9876543210" maxlength="10" pattern="[0-9]{10}"  required/> <span class="error_form"></span>
+                </div>
+                <!-- Select Gender -->
+                <div class="question" id = "gender">
+                    <p class="abc">Gender<span class="required">*</span></p>
+                    <div class="question-answer">
+                      <label><input type="radio" value="male" name="gender" required/><span class="error_form">Male</span></label>
+                      <label><input type="radio" value="female" name="gender" required/><span class="error_form">Female</span></label>
+                    </div>
+                </div>
+                <!--Enter Current Weight-->
+                <div class="item" id="cWt">
+                    <span class="abc"> Current Weight<span class="required">*</span></span><br>
+                    <input type ="number" class="txtbox1" name ="cwt" placeholder="in kg" required/><span class= "error_form"></span><br>
+                </div>
+                <!-- Enter Desired Weight -->
+                <div class="item" id="dWt">
+                    <span class="abc">Desired Weight<span class="required">*</span></span><br>
+                    <input type ="number" class="txtbox1" name ="rwt" placeholder="in kg"required/><span class= "error_form"></span><br>
+                </div>
+                <!-- Enter your height -->
+                <div class="item" id="ht">            
+                    <span class="abc" > Height <span class="required">*</span></span><br>
+                    <input type ="number" class="txtbox1" name ="ht" placeholder="in cm" required/><span class = "error_form"></span>
+                </div>
+                
+                <!-- Enter your Address -->
+                <div class="item" id="address">
+                    <span class = "abc">Home Address<span class="required">*</span></span><br>
+                    <input type="text" class="txtbox1"  name="Sadd" placeholder="Address Line 1" required/><span class = "error_form"></span><br>
+                    <input type="text" class="txtbox1"  name="Sadd" placeholder="Address Line 2" required/><span class = "error_form"></span>
+                </div>
+            
+                <div class="item">
+                    <div class = "city-item" id="add1">
+                        <input type="text" class="txtbox" name="Cname" placeholder="City" required/><span class = "error_form"></span>
+                        <input type="text" class="txtbox" name="Rname" placeholder="Region" required/><span class = "error_form"></span><br>
+                    </div>
+                    <div class = "city-item" id="add2">
+                        <input type="text" class="txtbox" name="Zname" placeholder="Postal / Zip code" min="6" max="6" required/><span class = "error_form"></span>
+                        <input type="text" class="txtbox" name="Coname" placeholder="Country" required/><span class = "error_form"></span><br>    
+                    </div>
+                </div>
+            
+                <!-- Some questions -->
+                <div class="question" id="trainer">
+                    <p class="abc">Do you require a personal trainer?<span class="required">*</span></p>
+                    <div>
+                      <label><input type="radio" value="trainer-yes" name="personal-trainer" required/><span class="error_form">Yes</span></label>
+                      <label><input type="radio" value="trainer-no" name="personal-trainer" required/><span class="error_form">No</span></label>
+                    </div>
+                  </div>
+                 
+                <div class="question" id="gym">
+                    <p class="abc">Have you been in a Gym before?<span class="required">*</span></p>
+                    <div>
+                      <label><input type="radio" value="yes" name="gym-before" required/><span class="error_form">Yes</span></label>
+                      <label><input type="radio" value="no" name="gym-before" required/><span class="error_form">No</span></label>
+                    </div>
+                </div>
+                  <div class="question" id="membership">
+                    <p class="abc">Membership Type<span class="required">*</span></p>
+                    <div>
+                      <label><input type="radio" value="reg" name="membership" required/><span class="error_form">Regular</span></label>
+                      <label><input type="radio" value="pro" name="membership" required/><span class="error_form">Pro</span></label>
+                      <label><input type="radio" value="vip" name="membership" required/><span class="error_form">VIP</span></label>
+                    </div>
+                </div>
+                <!-- Signup details in which Javascript verification is used -->
+                <p class="signup"> Signup</p>
+                <!-- Enter your Email ID -->
+                <div class="item" id="mail">
+                    <span class="abc"> Email<span class="required">*</span></span><br>
+                         <input type="email" class="txtbox1" name="email" placeholder = "abc@gmail.com" required/>&nbsp;&nbsp;<span class="errorform" id="prompt1"></span> 
+                </div>
+                <!-- Enter Username -->
+                <div class="item" id="username">
+                    <span class="abc">Username<span class="required">*</span></span><br>
+                    <div class="username-item">
+                        <input type="text" class="txtbox1" name="uname" placeholder="Lucifer09" required/>&nbsp;&nbsp;<span class="errorform" id="prompt2"></span>
+                    </div>
+                </div>
+                <!-- Enter your password -->
+                <div class="item" id="pw">
+                    <span class="abc">Password<span class="required">*</span></span><br>
+                    <div class="password">
+                        <input type="password" class="txtbox1" id="show1" name="pword" required/>&nbsp;&nbsp;<span class="errorform" id="prompt3"></span>
+                        <label><p><input type="checkbox"  class="circle" onclick="showpw()"><span>Show Password</span></p></label>
+                    </div>
+                </div>
+                <!-- Password Confimation -->
+                <div class="item" id="cpw">
+                    <span class="abc">Confirm Password<span class="required">*</span></span><br>
+                    <div class="password">
+                        <input type="password" class="txtbox1" id ="show2" name="cpword" required />&nbsp; &nbsp;<span class="errorform" id="prompt4"></span>
+                        <label><p><input type="checkbox" class="circle" onclick="showcpw()"><span>Show Confirm Password</span></p></label>
+                    </div>
+                </div>
+                <!-- Submit & Reset button -->
+                <div class="btn" id="rst">
+                    <button type="reset" class="rst"> Reset </button>   
+                    <button type="submit" class="sub"> Apply </button>    
+                </div>
+        </div>
+        <!-- References -->
+        <hr style="margin-bottom: 20px; margin-top: 20px ;">
+        <div class="link">
+            <span class="bold"> References</span>
+            <br>
+            <ul>
+                <li>
+                    <a href="https://www.coursera.org/learn/web-development/home" target="_blank" class="link">Course on Introduction to Web-Development (Coursera) </a><br>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank" class="link"> Web-Development Tutorial by CodeWithHarry</a><br>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="link"> W3Schools HTML Tutorial </a>
+                    <br>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="link"> W3Schools CSS Tutorial </a><br>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="link"> W3Schools JavaScript Tutorial </a><br>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <hr style="margin-bottom: 20px; margin-top: 20px ;">
+        <div class="imp">
+            <span> Made by Aditya <span><br>
+            <span> Email: jain.aditya9120@gmail.com</span><br>
+        </div>
+        
+    </form>
+
+    <script src = "Final_Assignment_JS.js"></script>
+</body>
+
+</html>
+
+  
